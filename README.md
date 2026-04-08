@@ -45,13 +45,14 @@ Quando um preset é aplicado, o perfil é preenchido automaticamente com nome ba
 
 ## Modelos Incluídos
 
-Base inicial atual:
+Atualmente o app inclui `35` presets de modelos, organizados por marca:
 
-- `XLPower`: `Specter 700 V2`, `Nimbus 550 V2`
-- `Align`: `T-Rex 700XN`, `T-Rex 550X`, `T-Rex 470LT`
-- `Tron`: `7.0 Dnamic`, `5.5 Orion Gemini`
-- `Gaui`: `X7`
-- `SAB`: `Goblin RAW 700`
+- `Align`: `T-Rex 470L (Dominator)`, `T-Rex 470LT (Dominator)`, `T-Rex 500X (Belt Version)`, `T-Rex 550X (Dominator)`, `T-Rex 600XN (Dominator)`, `T-Rex 700 Nitro Pro (M1)`, `T-Rex 700E (DFC)`, `T-Rex 700N (DFC)`, `T-Rex 700XN (Dominator)`
+- `Gaui`: `X3 (Basic Kit)`, `X4 II (FBL)`, `X5 (Formula)`, `X5 (Lite)`, `X7 (Flybarless)`
+- `Goosky`: `RS4 (Legend Venom)`, `RS5 (Legend)`, `RS6 (Legend)`, `RS7 (Legend)`
+- `SAB`: `Black Thunder 700`, `Goblin 500 Sport`, `ilGoblin 700 RAW/PRO`, `RAW 580`, `RAW 580 Nitro`, `RAW 700`, `RAW 700 Nitro`, `RAW Piuma`
+- `Tron`: `5.5 Orion Gemini (Standard)`, `7.0 Dnamic (Standard)`
+- `XLPower`: `Nimbus 550 (V2 Nitro)`, `Nimbus 550 (V2)`, `Specter 700 (V1)`, `Specter 700 (V2 Nitro Ultimate)`, `Specter 700 (V2)`, `Wraith E 760 (V3)`, `XL 550 (XL55V2K01)`
 
 Observações:
 
