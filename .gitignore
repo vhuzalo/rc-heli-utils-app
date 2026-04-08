@@ -1,0 +1,15 @@
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+.packages
+.idea/
+*.iml
+build/
+coverage/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+android/.gradle/
+android/key.properties
+android/app/upload-keystore.jks
+android/hs_err_pid*.log

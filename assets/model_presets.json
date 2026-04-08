@@ -1,0 +1,1509 @@
+{
+  "models": [
+    {
+      "id": "xlpower-specter-700-v1",
+      "brand": "XLPower",
+      "model": "Specter 700",
+      "variant": "V1",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [685, 716],
+      "tailBladeRangeMm": [105, 115],
+      "notes": "Original Specter 700 preset based on the legacy XLPower manual. Tooth counts match the published 9.636 main ratio and the known Specter tail drivetrain family.",
+      "sources": [
+        {
+          "title": "XLPower Specter 700 legacy manual mirror",
+          "url": "https://www.manualslib.com/manual/1857677/Xlpower-Specter-700.html"
+        },
+        {
+          "title": "XLPower Specter700 manual mirror",
+          "url": "https://www.manualslib.com/manual/1441358/Xlpower-Specter700.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 11T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 11,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 21
+          },
+          "mainRatio": 9.636,
+          "tailRatio": 4.767
+        },
+        {
+          "label": "Optional 10T",
+          "teeth": {
+            "Z1": 10,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 21
+          },
+          "mainRatio": 10.6,
+          "tailRatio": 4.767
+        },
+        {
+          "label": "Optional 12T",
+          "teeth": {
+            "Z1": 12,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 21
+          },
+          "mainRatio": 8.833,
+          "tailRatio": 4.767
+        }
+      ]
+    },
+    {
+      "id": "xlpower-specter-700-v2",
+      "brand": "XLPower",
+      "model": "Specter 700",
+      "variant": "V2",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [690, 720],
+      "tailBladeRangeMm": [105, 115],
+      "notes": "Preset based on manufacturer manual specs. The app can use any listed gear option as the starting transmission setup.",
+      "sources": [
+        {
+          "title": "XLPower manuals page",
+          "url": "https://www.xlpower-rc.com/pages/manuals"
+        },
+        {
+          "title": "XLPower Specter 700 V2 instruction manual mirror",
+          "url": "https://www.manualslib.com/manual/3031833/Xlpower-Specter-700-V2.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 11T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 11,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 21
+          },
+          "mainRatio": 9.636,
+          "tailRatio": 4.767
+        },
+        {
+          "label": "Optional 10T",
+          "teeth": {
+            "Z1": 10,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 21
+          },
+          "mainRatio": 10.6,
+          "tailRatio": 4.767
+        },
+        {
+          "label": "Optional 12T",
+          "teeth": {
+            "Z1": 12,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 21
+          },
+          "mainRatio": 8.833,
+          "tailRatio": 4.767
+        },
+        {
+          "label": "Optional tail 20T",
+          "teeth": {
+            "Z1": 11,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 20
+          },
+          "mainRatio": 9.636,
+          "tailRatio": 5.0
+        }
+      ]
+    },
+    {
+      "id": "xlpower-xl55v2k01",
+      "brand": "XLPower",
+      "model": "XL 550",
+      "variant": "XL55V2K01",
+      "classSize": 550,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [520, 570],
+      "tailBladeRangeMm": [95, 95],
+      "notes": "Legacy naming for the early Nimbus 550 mini-servo kit. Uses the same published drivetrain data from the XL55V2K01 manual.",
+      "sources": [
+        {
+          "title": "XLPower XL55V2K01 / Nimbus 550 manual mirror",
+          "url": "https://www.manualslib.com/manual/3015321/Xlpower-Nimbus-550.html"
+        },
+        {
+          "title": "XL55V2K01 product listing",
+          "url": "https://www.modellbauwelt.at/RC-Modell-Helis/RC-Heli-XLPower/XLPower-Nimbus-550-fuer-Midi-Servos-Kit-ohne-Rotorblaetter%3A%3A58676.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 12T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 12,
+            "Z2": 106,
+            "Z3": 60,
+            "Z4": 13
+          },
+          "mainRatio": 8.83,
+          "tailRatio": 4.615
+        },
+        {
+          "label": "Optional 11T",
+          "teeth": {
+            "Z1": 11,
+            "Z2": 106,
+            "Z3": 60,
+            "Z4": 13
+          },
+          "mainRatio": 9.636,
+          "tailRatio": 4.615
+        },
+        {
+          "label": "Optional 13T",
+          "teeth": {
+            "Z1": 13,
+            "Z2": 106,
+            "Z3": 60,
+            "Z4": 13
+          },
+          "mainRatio": 8.154,
+          "tailRatio": 4.615
+        }
+      ]
+    },
+    {
+      "id": "xlpower-nimbus-550-v2",
+      "brand": "XLPower",
+      "model": "Nimbus 550",
+      "variant": "V2",
+      "classSize": 550,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [550, 580],
+      "tailBladeRangeMm": [95, 105],
+      "notes": "Initial verified XLPower 550 preset. Additional options can be added as more official docs are confirmed.",
+      "sources": [
+        {
+          "title": "XLPower manuals page",
+          "url": "https://www.xlpower-rc.com/pages/manuals"
+        },
+        {
+          "title": "XLPower Nimbus 550 instruction manual mirror",
+          "url": "https://www.manualslib.com/manual/3015321/Xlpower-Nimbus-550.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 12T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 12,
+            "Z2": 106,
+            "Z3": 60,
+            "Z4": 13
+          },
+          "mainRatio": 8.83,
+          "tailRatio": 4.615
+        },
+        {
+          "label": "Optional 11T",
+          "teeth": {
+            "Z1": 11,
+            "Z2": 106,
+            "Z3": 60,
+            "Z4": 13
+          },
+          "mainRatio": 9.636,
+          "tailRatio": 4.615
+        },
+        {
+          "label": "Optional 13T",
+          "teeth": {
+            "Z1": 13,
+            "Z2": 106,
+            "Z3": 60,
+            "Z4": 13
+          },
+          "mainRatio": 8.154,
+          "tailRatio": 4.615
+        }
+      ]
+    },
+    {
+      "id": "xlpower-nimbus-550-v2-nitro",
+      "brand": "XLPower",
+      "model": "Nimbus 550",
+      "variant": "V2 Nitro",
+      "classSize": 550,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [550, 580],
+      "notes": "Nitro preset based on XLPower's official V2 Nitro specification page. Tail pulley tooth counts are inferred from the published tail-ratio options using the matching electric 550 tail drivetrain family.",
+      "sources": [
+        {
+          "title": "XLPower Nimbus 550 V2 Nitro official product page",
+          "url": "https://www.xlpower-rc.com/products/xlpower-nimbus-550-nitro"
+        },
+        {
+          "title": "XLPower manuals page",
+          "url": "https://www.xlpower-rc.com/pages/manuals"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 22T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 22,
+            "Z2": 170,
+            "Z3": 60,
+            "Z4": 13
+          },
+          "mainRatio": 7.7,
+          "tailRatio": 4.615
+        },
+        {
+          "label": "Optional 20T",
+          "teeth": {
+            "Z1": 20,
+            "Z2": 170,
+            "Z3": 60,
+            "Z4": 12
+          },
+          "mainRatio": 8.5,
+          "tailRatio": 5.0
+        }
+      ]
+    },
+    {
+      "id": "xlpower-specter-700-v2-nitro-ultimate",
+      "brand": "XLPower",
+      "model": "Specter 700",
+      "variant": "V2 Nitro Ultimate",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [685, 716],
+      "tailBladeRangeMm": [105, 115],
+      "notes": "Nitro preset based on XLPower's official V2 Nitro Ultimate specification page. Tail pulley tooth counts are inferred from the published tail-ratio options and the matching Specter V2 tail drivetrain family.",
+      "sources": [
+        {
+          "title": "XLPower Specter 700 V2 Nitro Ultimate official product page",
+          "url": "https://www.xlpower-rc.com/products/xlpower-specter-700-nitro"
+        },
+        {
+          "title": "XLPower manuals page",
+          "url": "https://www.xlpower-rc.com/pages/manuals"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 17T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 17,
+            "Z2": 139,
+            "Z3": 100,
+            "Z4": 21
+          },
+          "mainRatio": 8.176,
+          "tailRatio": 4.767
+        },
+        {
+          "label": "Optional tail 20T",
+          "teeth": {
+            "Z1": 17,
+            "Z2": 139,
+            "Z3": 100,
+            "Z4": 20
+          },
+          "mainRatio": 8.176,
+          "tailRatio": 5.0
+        }
+      ]
+    },
+    {
+      "id": "xlpower-wraith-e-760-v3",
+      "brand": "XLPower",
+      "model": "Wraith E 760",
+      "variant": "V3",
+      "classSize": 760,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [760, 760],
+      "tailBladeRangeMm": [115, 115],
+      "notes": "F3C preset based on XLPower's official Wraith E 760 V3 specification page. Tail pulley tooth counts are inferred from the published fixed 5.0 tail ratio using the Specter-derived drivetrain noted by XLPower.",
+      "sources": [
+        {
+          "title": "XLPower Wraith E 760 V3 official product page",
+          "url": "https://www.xlpower-rc.com/products/xlpower-wraith-e-760-v3"
+        },
+        {
+          "title": "XLPower manuals page",
+          "url": "https://www.xlpower-rc.com/pages/manuals"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 10T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 10,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 20
+          },
+          "mainRatio": 10.6,
+          "tailRatio": 5.0
+        },
+        {
+          "label": "Optional 9T",
+          "teeth": {
+            "Z1": 9,
+            "Z2": 106,
+            "Z3": 100,
+            "Z4": 20
+          },
+          "mainRatio": 11.778,
+          "tailRatio": 5.0
+        }
+      ]
+    },
+    {
+      "id": "align-trex-700-nitro-pro",
+      "brand": "Align",
+      "model": "T-Rex 700 Nitro Pro",
+      "variant": "M1",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [690, 690],
+      "tailBladeRangeMm": [105, 105],
+      "notes": "Preset based on Align's published Nitro Pro M1 gear conversion set.",
+      "sources": [
+        {
+          "title": "Align 700 Nitro Pro CNC gears assembly",
+          "url": "https://www.align-trex.co.uk/helicopter-kits-spares/helicopter-spares/align-t-rex-spares/align-700-series/align-trex-700n/align-t-rex-700-cnc-gears-assembly-hn7021d.html"
+        },
+        {
+          "title": "Align CNC main drive gear 115T",
+          "url": "https://www.amainhobbies.com/align-cnc-main-drive-gear-115t-agnhn7019d/p216319"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 14T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 14,
+            "Z2": 115,
+            "Z3": 104,
+            "Z4": 24
+          },
+          "mainRatio": 8.214,
+          "tailRatio": 4.333
+        }
+      ]
+    },
+    {
+      "id": "align-trex-700n-dfc",
+      "brand": "Align",
+      "model": "T-Rex 700N",
+      "variant": "DFC",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [690, 690],
+      "tailBladeRangeMm": [105, 105],
+      "notes": "Preset based on 700N DFC published specifications and replacement drivetrain parts.",
+      "sources": [
+        {
+          "title": "T-Rex 700N DFC product spec mirror",
+          "url": "https://www.exportersindia.com/product-detail/align-t-rex-700-nitro-dfc-3gx-super-combo-nitro-helicopter-surabaya-indonesia-1392681.htm"
+        },
+        {
+          "title": "Align 700N 104T helical autorotation tail drive gear set",
+          "url": "https://vortexhobbies.com/product_info.php?products_id=13224"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 14T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 14,
+            "Z2": 112,
+            "Z3": 104,
+            "Z4": 21
+          },
+          "mainRatio": 8.0,
+          "tailRatio": 4.95
+        }
+      ]
+    },
+    {
+      "id": "align-trex-700e",
+      "brand": "Align",
+      "model": "T-Rex 700E",
+      "variant": "DFC",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [700, 700],
+      "tailBladeRangeMm": [105, 105],
+      "notes": "Preset built from published Align drivetrain part specs for the 700E tail ratio and pinion. Uses the 104T/22T tail-drive set and stock 12T motor pinion.",
+      "sources": [
+        {
+          "title": "Align 700E 104T helical autorotation tail drive gear set",
+          "url": "https://www.align-trex.co.uk/700e-104t-m1-helical-autorotation-tail-drive-gear-set-h70110.html"
+        },
+        {
+          "title": "Align 12T T-Rex 700E motor pinion gear",
+          "url": "https://www.align-trex.co.uk/12t-trex700e-motor-pinion-gear-h70054t.html"
+        },
+        {
+          "title": "Align 112T slant thread main drive gear",
+          "url": "https://www.align-trex.co.uk/align-cnc-slant-thread-main-drive-gear-112t-h70g002axt.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 12T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 12,
+            "Z2": 112,
+            "Z3": 104,
+            "Z4": 22
+          },
+          "mainRatio": 9.333,
+          "tailRatio": 4.727
+        }
+      ]
+    },
+    {
+      "id": "align-trex-700xn",
+      "brand": "Align",
+      "model": "T-Rex 700XN",
+      "variant": "Dominator",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [700, 700],
+      "tailBladeRangeMm": [106, 106],
+      "notes": "Preset from product specification with full tooth counts published by the seller.",
+      "sources": [
+        {
+          "title": "Align T-Rex 700XN product page",
+          "url": "https://www.align-trex.co.uk/align-t-rex-700xn-dominator-combo-rh70n11xt.html.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 13T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 13,
+            "Z2": 107,
+            "Z3": 104,
+            "Z4": 22
+          },
+          "mainRatio": 8.231,
+          "tailRatio": 4.727
+        }
+      ]
+    },
+    {
+      "id": "align-trex-600xn",
+      "brand": "Align",
+      "model": "T-Rex 600XN",
+      "variant": "Dominator",
+      "classSize": 600,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [600, 600],
+      "tailBladeRangeMm": [95, 95],
+      "notes": "Preset from product specification with full tooth counts published by the seller.",
+      "sources": [
+        {
+          "title": "Align T-Rex 600XN product page",
+          "url": "https://www.align-trex.co.uk/align-t-rex-600xn-super-combo-rh60n06xt.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 20T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 20,
+            "Z2": 170,
+            "Z3": 180,
+            "Z4": 40
+          },
+          "mainRatio": 8.5,
+          "tailRatio": 4.5
+        }
+      ]
+    },
+    {
+      "id": "align-trex-500x-belt",
+      "brand": "Align",
+      "model": "T-Rex 500X",
+      "variant": "Belt Version",
+      "classSize": 500,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [470, 470],
+      "tailBladeRangeMm": [78, 78],
+      "notes": "Preset from product specification with full tooth counts published by the seller.",
+      "sources": [
+        {
+          "title": "Align T-Rex 500X belt version product page",
+          "url": "https://www.align-trex.co.uk/align-t-rex-500x-super-combo-with-upgraded-servos-belt-driven-tail-rh50e17xt.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 12T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 12,
+            "Z2": 134,
+            "Z3": 80,
+            "Z4": 21
+          },
+          "mainRatio": 11.167,
+          "tailRatio": 3.81
+        }
+      ]
+    },
+    {
+      "id": "align-trex-550x",
+      "brand": "Align",
+      "model": "T-Rex 550X",
+      "variant": "Dominator",
+      "classSize": 550,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [550, 550],
+      "tailBladeRangeMm": [95, 95],
+      "notes": "Preset from product specification with full tooth counts published by the seller.",
+      "sources": [
+        {
+          "title": "Align T-Rex 550X product page",
+          "url": "https://www.align-trex.co.uk/align-t-rex-550x-combo-rh55e19xt-rh55e18xt.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 16T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 16,
+            "Z2": 112,
+            "Z3": 131,
+            "Z4": 34
+          },
+          "mainRatio": 7.0,
+          "tailRatio": 3.853
+        }
+      ]
+    },
+    {
+      "id": "align-trex-470l",
+      "brand": "Align",
+      "model": "T-Rex 470L",
+      "variant": "Dominator",
+      "classSize": 450,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [380, 380],
+      "tailBladeRangeMm": [69, 69],
+      "notes": "Preset from product specification with full tooth counts published by the seller.",
+      "sources": [
+        {
+          "title": "Align T-Rex 470L product page",
+          "url": "https://www.align-trex.co.uk/align-t-rex-470lp-kit-rh47e03x.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 11T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 11,
+            "Z2": 121,
+            "Z3": 56,
+            "Z4": 15
+          },
+          "mainRatio": 11.0,
+          "tailRatio": 3.733
+        }
+      ]
+    },
+    {
+      "id": "align-trex-470lt",
+      "brand": "Align",
+      "model": "T-Rex 470LT",
+      "variant": "Dominator",
+      "classSize": 450,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [380, 380],
+      "tailBladeRangeMm": [69, 69],
+      "notes": "Preset from product specification with full tooth counts published by the seller. Kept under 450 class because the source classifies it that way.",
+      "sources": [
+        {
+          "title": "Align T-Rex 470LT product page",
+          "url": "https://www.align-trex.co.uk/align-t-rex-470lt-super-combo-rh47e09x.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 11T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 11,
+            "Z2": 121,
+            "Z3": 104,
+            "Z4": 28
+          },
+          "mainRatio": 11.0,
+          "tailRatio": 3.714
+        }
+      ]
+    },
+    {
+      "id": "tron-7-0-dnamic",
+      "brand": "Tron",
+      "model": "7.0 Dnamic",
+      "variant": "Standard",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [680, 700],
+      "tailBladeRangeMm": [105, 106],
+      "notes": "Preset from official Tron manual and product page.",
+      "sources": [
+        {
+          "title": "Tron 7.0 manual",
+          "url": "https://tronhelicopters.com/wp-content/uploads/2021/12/1.0.4_manual_tron_7.0.pdf"
+        },
+        {
+          "title": "Tron 7.0 product page",
+          "url": "https://tronhelicopters.com/produkt/tron-6-9-dnamic-helicopter-kit/"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 20T tail / 14T pinion",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 14,
+            "Z2": 155,
+            "Z3": 127,
+            "Z4": 20
+          },
+          "mainRatio": 11.071,
+          "tailRatio": 6.35
+        },
+        {
+          "label": "23T tail / 15T pinion",
+          "teeth": {
+            "Z1": 15,
+            "Z2": 155,
+            "Z3": 127,
+            "Z4": 23
+          },
+          "mainRatio": 10.333,
+          "tailRatio": 5.522
+        },
+        {
+          "label": "22T tail / 16T pinion",
+          "teeth": {
+            "Z1": 16,
+            "Z2": 155,
+            "Z3": 127,
+            "Z4": 22
+          },
+          "mainRatio": 9.688,
+          "tailRatio": 5.773
+        }
+      ]
+    },
+    {
+      "id": "tron-5-5-orion-gemini",
+      "brand": "Tron",
+      "model": "5.5 Orion Gemini",
+      "variant": "Standard",
+      "classSize": 550,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [550, 560],
+      "tailBladeRangeMm": [85, 98],
+      "notes": "Preset from official Tron manual and product page.",
+      "sources": [
+        {
+          "title": "Tron 5.5 manual",
+          "url": "https://tronhelicopters.com/wp-content/uploads/2021/12/1.1.3_manual_tron_5.5.pdf"
+        },
+        {
+          "title": "Tron 5.5 product page",
+          "url": "https://tronhelicopters.com/produkt/tron-5-5-orion-gemini/"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 16T / 19T tail",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 16,
+            "Z2": 135,
+            "Z3": 80,
+            "Z4": 19
+          },
+          "mainRatio": 8.438,
+          "tailRatio": 4.211
+        },
+        {
+          "label": "14T / 19T tail",
+          "teeth": {
+            "Z1": 14,
+            "Z2": 135,
+            "Z3": 80,
+            "Z4": 19
+          },
+          "mainRatio": 9.643,
+          "tailRatio": 4.211
+        },
+        {
+          "label": "15T / 20T tail",
+          "teeth": {
+            "Z1": 15,
+            "Z2": 135,
+            "Z3": 80,
+            "Z4": 20
+          },
+          "mainRatio": 9.0,
+          "tailRatio": 4.0
+        }
+      ]
+    },
+    {
+      "id": "goosky-rs4",
+      "brand": "Goosky",
+      "model": "RS4",
+      "variant": "Legend Venom",
+      "classSize": 400,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [390, 390],
+      "notes": "Direct-drive main rotor preset represented as 1:1 so it fits the current app schema. Tail transmission remains belt driven. The symbolic main teeth and the front tail pulley tooth count are inferred from the published 1:1 main ratio and the published tail-ratio range with 23T included.",
+      "sources": [
+        {
+          "title": "GOOSKY RS4 official product page",
+          "url": "https://www.gooskystore.com/product/goosky-legend-rs4-venom-helicopter-kit-with-motor-green-unassembled/"
+        },
+        {
+          "title": "GOOSKY RS4 Venom manual mirror",
+          "url": "https://www.live-hobby.de/out/media/goosky-rs4-venom-manual-en.pdf"
+        },
+        {
+          "title": "GOOSKY RS4 spec listing",
+          "url": "https://www.live-hobby.de/en/Helicopter/GOOSKY/Goosky-Legend-RS4-Venom-Helicopter-orange-KIT-BAF020015.html"
+        },
+        {
+          "title": "GOOSKY RS4 ratio listing",
+          "url": "https://goldstonejapan.cart.fc2.com/?sort=4"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "23T tail included",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 1,
+            "Z2": 1,
+            "Z3": 112,
+            "Z4": 23
+          },
+          "mainRatio": 1.0,
+          "tailRatio": 4.9
+        },
+        {
+          "label": "21T tail optional",
+          "teeth": {
+            "Z1": 1,
+            "Z2": 1,
+            "Z3": 112,
+            "Z4": 21
+          },
+          "mainRatio": 1.0,
+          "tailRatio": 5.3
+        }
+      ]
+    },
+    {
+      "id": "goosky-rs5",
+      "brand": "Goosky",
+      "model": "RS5",
+      "variant": "Legend",
+      "classSize": 550,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [560, 560],
+      "tailBladeRangeMm": [95, 95],
+      "notes": "Preset based on official GOOSKY RS5 kit specifications.",
+      "sources": [
+        {
+          "title": "GOOSKY RS5 official product page",
+          "url": "https://www.gooskystore.com/product/goosky-legend-rs5-helicopter-kit-w-o-blade-pink-unassembled/"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "12T / 16T tail",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 12,
+            "Z2": 107,
+            "Z3": 75,
+            "Z4": 16
+          },
+          "mainRatio": 8.917,
+          "tailRatio": 4.6875
+        },
+        {
+          "label": "13T / 16T tail",
+          "teeth": {
+            "Z1": 13,
+            "Z2": 107,
+            "Z3": 75,
+            "Z4": 16
+          },
+          "mainRatio": 8.231,
+          "tailRatio": 4.6875
+        }
+      ]
+    },
+    {
+      "id": "goosky-rs6",
+      "brand": "Goosky",
+      "model": "RS6",
+      "variant": "Legend",
+      "classSize": 600,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [600, 600],
+      "tailBladeRangeMm": [95, 95],
+      "notes": "Preset based on widely mirrored GOOSKY RS6 published specifications. Tooth counts and ratios match the public spec sheet.",
+      "sources": [
+        {
+          "title": "GOOSKY RS6 product listing",
+          "url": "https://www.gooskystore.com/product-category/products/helicopter/goosky-rs6-helicopter/"
+        },
+        {
+          "title": "GOOSKY RS6 spec mirror",
+          "url": "https://www.qucox.com/goosky-legend-rs6-helicopter/"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "12T / 16T tail",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 12,
+            "Z2": 107,
+            "Z3": 75,
+            "Z4": 16
+          },
+          "mainRatio": 8.917,
+          "tailRatio": 4.6875
+        },
+        {
+          "label": "13T / 16T tail",
+          "teeth": {
+            "Z1": 13,
+            "Z2": 107,
+            "Z3": 75,
+            "Z4": 16
+          },
+          "mainRatio": 8.231,
+          "tailRatio": 4.6875
+        }
+      ]
+    },
+    {
+      "id": "goosky-rs7",
+      "brand": "Goosky",
+      "model": "RS7",
+      "variant": "Legend",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [700, 700],
+      "tailBladeRangeMm": [105, 105],
+      "notes": "Preset based on official GOOSKY RS7 specifications and manual text.",
+      "sources": [
+        {
+          "title": "GOOSKY RS7 official product page",
+          "url": "https://www.gooskystore.com/product/goosky-legend-rs7-helicopter-kit-w-o-blades-yellow/"
+        },
+        {
+          "title": "GOOSKY RS7 manual mirror",
+          "url": "https://device.report/manual/15909569"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "11T / 21T tail",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 11,
+            "Z2": 107,
+            "Z3": 100,
+            "Z4": 21
+          },
+          "mainRatio": 9.727,
+          "tailRatio": 4.76
+        },
+        {
+          "label": "12T / 20T tail",
+          "teeth": {
+            "Z1": 12,
+            "Z2": 107,
+            "Z3": 100,
+            "Z4": 20
+          },
+          "mainRatio": 8.9,
+          "tailRatio": 5.0
+        }
+      ]
+    },
+    {
+      "id": "gaui-x3",
+      "brand": "Gaui",
+      "model": "X3",
+      "variant": "Basic Kit",
+      "classSize": 450,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [315, 360],
+      "tailBladeRangeMm": [62, 62],
+      "notes": "Preset built from the X3 manual plus dealer-published drivetrain tooth counts and ratio options.",
+      "sources": [
+        {
+          "title": "GAUI X3 instruction manual mirror",
+          "url": "https://www.manualslib.com/manual/1108371/Gaui-X3.html"
+        },
+        {
+          "title": "GAUI X3 specs and gear ratios",
+          "url": "https://rc.zenmtech.com/heli-gaui-x3-basic-kit-cnc-tail-rotor-grips.html"
+        },
+        {
+          "title": "GAUI X3 drivetrain listing",
+          "url": "https://www.mcmracing.com/en/blog/big-gaui-sale--n191"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "9T",
+          "teeth": {
+            "Z1": 9,
+            "Z2": 131,
+            "Z3": 61,
+            "Z4": 14
+          },
+          "mainRatio": 14.55,
+          "tailRatio": 4.357
+        },
+        {
+          "label": "10T",
+          "teeth": {
+            "Z1": 10,
+            "Z2": 131,
+            "Z3": 61,
+            "Z4": 14
+          },
+          "mainRatio": 13.1,
+          "tailRatio": 4.357
+        },
+        {
+          "label": "11T",
+          "teeth": {
+            "Z1": 11,
+            "Z2": 131,
+            "Z3": 61,
+            "Z4": 14
+          },
+          "mainRatio": 11.9,
+          "tailRatio": 4.357
+        },
+        {
+          "label": "12T",
+          "teeth": {
+            "Z1": 12,
+            "Z2": 131,
+            "Z3": 61,
+            "Z4": 14
+          },
+          "mainRatio": 10.91,
+          "tailRatio": 4.357
+        },
+        {
+          "label": "13T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 13,
+            "Z2": 131,
+            "Z3": 61,
+            "Z4": 14
+          },
+          "mainRatio": 10.07,
+          "tailRatio": 4.357
+        }
+      ]
+    },
+    {
+      "id": "gaui-x4-ii",
+      "brand": "Gaui",
+      "model": "X4 II",
+      "variant": "FBL",
+      "classSize": 500,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [425, 460],
+      "tailBladeRangeMm": [70, 86],
+      "notes": "Main ratio and size data come from the X4 II kit listing. Main gear tooth count is inferred from the published 18T ratio; tail gear tooth counts follow the compatible X4 II / NX4 / X5 drivetrain family and should be treated as practical setup values.",
+      "sources": [
+        {
+          "title": "GAUI X4 assembly instruction manual mirror",
+          "url": "https://www.manualslib.com/manual/1106118/Gaui-X4.html"
+        },
+        {
+          "title": "GAUI X4 II FBL kit specs",
+          "url": "https://www.anythingheli.com/gaui-x4-ii-fbl-helicopter-kit-no-blades/"
+        },
+        {
+          "title": "GAUI X4 II / X5 shared drivetrain parts",
+          "url": "https://www.anythingheli.com/x4ii-1/"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "17T",
+          "teeth": {
+            "Z1": 17,
+            "Z2": 120,
+            "Z3": 61,
+            "Z4": 14
+          },
+          "mainRatio": 7.059,
+          "tailRatio": 4.357
+        },
+        {
+          "label": "18T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 18,
+            "Z2": 120,
+            "Z3": 61,
+            "Z4": 14
+          },
+          "mainRatio": 6.67,
+          "tailRatio": 4.357
+        }
+      ]
+    },
+    {
+      "id": "gaui-x5-lite",
+      "brand": "Gaui",
+      "model": "X5",
+      "variant": "Lite",
+      "classSize": 500,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [500, 530],
+      "tailBladeRangeMm": [82, 82],
+      "notes": "Lite combo preset based on dealer-published kit specs. Tail gearing follows the published X5 family drivetrain values.",
+      "sources": [
+        {
+          "title": "GAUI X5 Lite specs",
+          "url": "https://www.mcmracing.com/en/blog/big-gaui-sale--n191"
+        },
+        {
+          "title": "GAUI X5 Formula specs and gear table",
+          "url": "https://nem.gr/GAUI-X5-FORMULA-Basic-Kit-208051-CNC-Parts"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "16T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 16,
+            "Z2": 120,
+            "Z3": 61,
+            "Z4": 15
+          },
+          "mainRatio": 7.5,
+          "tailRatio": 4.067
+        }
+      ]
+    },
+    {
+      "id": "gaui-x5-formula",
+      "brand": "Gaui",
+      "model": "X5",
+      "variant": "Formula",
+      "classSize": 500,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [500, 530],
+      "tailBladeRangeMm": [82, 82],
+      "notes": "Formula preset from the published X5 gear table.",
+      "sources": [
+        {
+          "title": "GAUI X5 Formula specs and gear table",
+          "url": "https://nem.gr/GAUI-X5-FORMULA-Basic-Kit-208051-CNC-Parts"
+        },
+        {
+          "title": "GAUI X5 assembly instruction manual mirror",
+          "url": "https://www.manualslib.com/manual/1556509/Gaui-X5.html"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "13T",
+          "teeth": {
+            "Z1": 13,
+            "Z2": 120,
+            "Z3": 61,
+            "Z4": 15
+          },
+          "mainRatio": 9.2,
+          "tailRatio": 4.067
+        },
+        {
+          "label": "14T",
+          "teeth": {
+            "Z1": 14,
+            "Z2": 120,
+            "Z3": 61,
+            "Z4": 15
+          },
+          "mainRatio": 8.6,
+          "tailRatio": 4.067
+        },
+        {
+          "label": "15T",
+          "teeth": {
+            "Z1": 15,
+            "Z2": 120,
+            "Z3": 61,
+            "Z4": 15
+          },
+          "mainRatio": 8.0,
+          "tailRatio": 4.067
+        },
+        {
+          "label": "16T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 16,
+            "Z2": 120,
+            "Z3": 61,
+            "Z4": 15
+          },
+          "mainRatio": 7.5,
+          "tailRatio": 4.067
+        }
+      ]
+    },
+    {
+      "id": "gaui-x7",
+      "brand": "Gaui",
+      "model": "X7",
+      "variant": "Flybarless",
+      "classSize": 700,
+      "gearTrainType": "singleStage",
+      "mainBladeRangeMm": [690, 710],
+      "tailBladeRangeMm": [95, 105],
+      "notes": "Preset from manual pages that publish the gear-ratio comparison sheet. Main and tail tooth counts are explicit in the manual.",
+      "sources": [
+        {
+          "title": "GAUI X7 manual mirror",
+          "url": "https://www.manualslib.com/manual/1042001/Gaui-X7.html"
+        },
+        {
+          "title": "GAUI X7 ratio sheet mirror",
+          "url": "https://www.manualslib.com/manual/1042001/Gaui-X7.html?page=33"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Stock 10T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 10,
+            "Z2": 100,
+            "Z3": 66,
+            "Z4": 14
+          },
+          "mainRatio": 10.0,
+          "tailRatio": 4.714
+        },
+        {
+          "label": "Optional 11T",
+          "teeth": {
+            "Z1": 11,
+            "Z2": 100,
+            "Z3": 66,
+            "Z4": 14
+          },
+          "mainRatio": 9.091,
+          "tailRatio": 4.714
+        },
+        {
+          "label": "Optional 12T",
+          "teeth": {
+            "Z1": 12,
+            "Z2": 100,
+            "Z3": 66,
+            "Z4": 14
+          },
+          "mainRatio": 8.333,
+          "tailRatio": 4.714
+        }
+      ]
+    },
+    {
+      "id": "sab-goblin-500-sport",
+      "brand": "SAB",
+      "model": "Goblin 500 Sport",
+      "variant": "",
+      "classSize": 500,
+      "gearTrainType": "twoStageType1",
+      "sources": [
+        {
+          "title": "Rotorflight Two-Stage Gear Train Ratios",
+          "url": "https://www.rotorflight.org/docs/2.0.0/Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Std 18T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 18,
+            "Z2": 48,
+            "Z3": 18,
+            "Z4": 62,
+            "Z5": 28,
+            "Z6": 21
+          },
+          "mainRatio": 9.185,
+          "tailRatio": 4.127
+        }
+      ]
+    },
+    {
+      "id": "sab-black-thunder-700",
+      "brand": "SAB",
+      "model": "Black Thunder 700",
+      "variant": "",
+      "classSize": 700,
+      "gearTrainType": "twoStageType1",
+      "sources": [
+        {
+          "title": "Rotorflight Two-Stage Gear Train Ratios",
+          "url": "https://www.rotorflight.org/docs/2.0.0/Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Std 21T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 21,
+            "Z2": 60,
+            "Z3": 19,
+            "Z4": 68,
+            "Z5": 37,
+            "Z6": 26
+          },
+          "mainRatio": 10.225,
+          "tailRatio": 5.115
+        }
+      ]
+    },
+    {
+      "id": "sab-raw-580",
+      "brand": "SAB",
+      "model": "RAW 580",
+      "variant": "",
+      "classSize": 580,
+      "gearTrainType": "twoStageType1",
+      "sources": [
+        {
+          "title": "Rotorflight Two-Stage Gear Train Ratios",
+          "url": "https://www.rotorflight.org/docs/2.0.0/Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Std 22T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 22,
+            "Z2": 50,
+            "Z3": 14,
+            "Z4": 58,
+            "Z5": 27,
+            "Z6": 23
+          },
+          "mainRatio": 9.416,
+          "tailRatio": 4.865
+        }
+      ]
+    },
+    {
+      "id": "sab-raw-580-nitro",
+      "brand": "SAB",
+      "model": "RAW 580 Nitro",
+      "variant": "",
+      "classSize": 580,
+      "gearTrainType": "twoStageType1",
+      "sources": [
+        {
+          "title": "Rotorflight Two-Stage Gear Train Ratios",
+          "url": "https://www.rotorflight.org/docs/2.0.0/Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Std 26T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 26,
+            "Z2": 50,
+            "Z3": 14,
+            "Z4": 58,
+            "Z5": 27,
+            "Z6": 23
+          },
+          "mainRatio": 7.967,
+          "tailRatio": 4.865
+        }
+      ]
+    },
+    {
+      "id": "sab-raw-700-type1",
+      "brand": "SAB",
+      "model": "RAW 700",
+      "variant": "",
+      "classSize": 700,
+      "gearTrainType": "twoStageType1",
+      "sources": [
+        {
+          "title": "Rotorflight Two-Stage Gear Train Ratios",
+          "url": "https://www.rotorflight.org/docs/2.0.0/Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Std 21T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 21,
+            "Z2": 56,
+            "Z3": 18,
+            "Z4": 69,
+            "Z5": 34,
+            "Z6": 26
+          },
+          "mainRatio": 10.222,
+          "tailRatio": 5.013
+        }
+      ]
+    },
+    {
+      "id": "sab-raw-700-nitro",
+      "brand": "SAB",
+      "model": "RAW 700 Nitro",
+      "variant": "",
+      "classSize": 700,
+      "gearTrainType": "twoStageType1",
+      "sources": [
+        {
+          "title": "Rotorflight Two-Stage Gear Train Ratios",
+          "url": "https://www.rotorflight.org/docs/2.0.0/Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Std 27T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 27,
+            "Z2": 52,
+            "Z3": 14,
+            "Z4": 58,
+            "Z5": 27,
+            "Z6": 22
+          },
+          "mainRatio": 7.971,
+          "tailRatio": 5.084
+        }
+      ]
+    },
+    {
+      "id": "sab-raw-piuma",
+      "brand": "SAB",
+      "model": "RAW Piuma",
+      "variant": "",
+      "classSize": 700,
+      "gearTrainType": "twoStageType1",
+      "sources": [
+        {
+          "title": "Rotorflight Two-Stage Gear Train Ratios",
+          "url": "https://www.rotorflight.org/docs/2.0.0/Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Std 20T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 20,
+            "Z2": 52,
+            "Z3": 14,
+            "Z4": 58,
+            "Z5": 27,
+            "Z6": 22
+          },
+          "mainRatio": 10.771,
+          "tailRatio": 5.084
+        }
+      ]
+    },
+    {
+      "id": "sab-ilgoblin-700-raw-pro",
+      "brand": "SAB",
+      "model": "ilGoblin 700 RAW/PRO",
+      "variant": "",
+      "classSize": 700,
+      "gearTrainType": "twoStageType1",
+      "sources": [
+        {
+          "title": "Rotorflight Two-Stage Gear Train Ratios",
+          "url": "https://www.rotorflight.org/docs/2.0.0/Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios"
+        }
+      ],
+      "gearOptions": [
+        {
+          "label": "Std 21T",
+          "isDefault": true,
+          "teeth": {
+            "Z1": 21,
+            "Z2": 56,
+            "Z3": 18,
+            "Z4": 68,
+            "Z5": 34,
+            "Z6": 26
+          },
+          "mainRatio": 10.074,
+          "tailRatio": 4.940
+        }
+      ]
+    }
+  ]
+}
