@@ -1,43 +1,51 @@
 # RC Heli Utils
 
-Flutter app for RC helicopter setup and quick reference.
+Aplicativo Flutter para setup e consulta rápida de helimodelos RC.
 
-The goal of the project is to keep useful setup tools in a simple interface, with local helicopter profiles and reusable data shared across calculators.
+O objetivo do projeto é concentrar ferramentas úteis de configuração em uma interface simples, com perfis locais de helicópteros e dados reaproveitáveis entre as calculadoras.
 
-## Features
+## Baixar o APK da Última Release
 
-- blade angle calculator
-- accelerometer-based blade angle meter
-- Rotorflight-aligned gear ratio calculator
-- local per-heli profiles
-- home screen with a list of saved profiles
-- preloaded market models with transmission presets stored in a project file
+Para instalar a versão de testes mais recente, acesse a última release publicada no GitHub:
 
-## Market Presets
+[Baixar último APK](https://github.com/vhuzalo/rc-heli-utils-app/releases/latest)
 
-The project now includes a local database of preloaded helicopter models in [assets/model_presets.json](C:\Users\vhuza\Documents\RC Heli Utils\assets\model_presets.json).
+Na página da release, baixe o arquivo `rc_heli_utils.apk` na seção de assets.
 
-For each model, the file stores:
+## Funcionalidades
 
-- brand, model, variant, and class
-- main blade and tail blade ranges
-- transmission type
-- saved pinion/gear combinations
-- `mainRatio` and `tailRatio`
-- source references used to build the preset
-- notes describing verified or inferred data
+- calculadora de passo das pás
+- medidor de passo usando o acelerômetro do celular
+- calculadora de relação de transmissão alinhada ao Rotorflight
+- perfis locais por helicóptero
+- tela inicial com lista de perfis salvos
+- modelos de mercado pré-carregados com presets de transmissão em arquivo local
 
-In the profile create/edit flow, the app reads these presets and lets the user choose:
+## Presets de Mercado
 
-- brand
-- preloaded model
-- preloaded transmission setup
+O projeto inclui uma base local de modelos pré-carregados em [assets/model_presets.json](C:\Users\vhuza\Documents\RC Heli Utils\assets\model_presets.json).
 
-When a preset is applied, the profile is automatically filled with a base name, transmission type, and the tooth counts for the selected setup.
+Para cada modelo, o arquivo armazena:
 
-## Included Models
+- marca, modelo, variante e classe
+- faixas de tamanho de pá principal e de cauda
+- tipo de transmissão
+- combinações salvas de pinhão e engrenagem
+- `mainRatio` e `tailRatio`
+- referências de origem usadas para montar o preset
+- observações descrevendo dados verificados ou inferidos
 
-Current starter database:
+No fluxo de criação e edição de perfil, o app lê esses presets e permite escolher:
+
+- marca
+- modelo pré-carregado
+- configuração de transmissão pré-carregada
+
+Quando um preset é aplicado, o perfil é preenchido automaticamente com nome base, tipo de transmissão e contagens de dentes da configuração escolhida.
+
+## Modelos Incluídos
+
+Base inicial atual:
 
 - `XLPower`: `Specter 700 V2`, `Nimbus 550 V2`
 - `Align`: `T-Rex 700XN`, `T-Rex 550X`, `T-Rex 470LT`
@@ -45,46 +53,46 @@ Current starter database:
 - `Gaui`: `X7`
 - `SAB`: `Goblin RAW 700`
 
-Notes:
+Observações:
 
-- not every manufacturer publishes every tooth count with the same level of detail
-- when a preset relies on inference from official published ratios, that should be documented in the preset `notes` field
+- nem todo fabricante publica todas as contagens de dentes com o mesmo nível de detalhe
+- quando um preset depende de inferência com base em relações publicadas oficialmente, isso deve ser documentado no campo `notes`
 
-## Structure
+## Estrutura
 
-- `lib/src/app`: bootstrap, global state, and main shell
-- `lib/src/core`: localization, theme, and base utilities
-- `lib/src/features/blade_angle`: blade angle calculator and angle meter
-- `lib/src/features/gear_ratio`: gear ratio calculator
-- `lib/src/features/home`: main screen and navigation
-- `lib/src/features/profiles`: local profiles, editor, and preset loading
-- `assets/model_presets.json`: local database of preloaded models and transmission setups
-- `test/`: business logic and persistence tests
+- `lib/src/app`: bootstrap, estado global e shell principal
+- `lib/src/core`: localização, tema e utilitários base
+- `lib/src/features/blade_angle`: calculadora de passo e medidor de passo
+- `lib/src/features/gear_ratio`: calculadora de relação de transmissão
+- `lib/src/features/home`: tela principal e navegação
+- `lib/src/features/profiles`: perfis locais, editor e carregamento de presets
+- `assets/model_presets.json`: base local de modelos e configurações de transmissão
+- `test/`: testes de regra de negócio e persistência
 
-## Important Files
+## Arquivos Importantes
 
-- [lib/src/features/profiles/data/model_preset_repository.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\data\model_preset_repository.dart): loads presets from the local asset file
-- [lib/src/features/profiles/domain/heli_model_preset.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\domain\heli_model_preset.dart): schema for preloaded model presets
-- [lib/src/features/profiles/presentation/profiles_screen.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\presentation\profiles_screen.dart): profile editor with preset selection
+- [lib/src/features/profiles/data/model_preset_repository.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\data\model_preset_repository.dart): carrega os presets a partir do asset local
+- [lib/src/features/profiles/domain/heli_model_preset.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\domain\heli_model_preset.dart): esquema dos presets de modelos pré-carregados
+- [lib/src/features/profiles/presentation/profiles_screen.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\presentation\profiles_screen.dart): editor de perfis com seleção de presets
 
-## How To Expand The Database
+## Como Expandir a Base
 
-To add new models:
+Para adicionar novos modelos:
 
-1. add a new item to `assets/model_presets.json`
-2. include the source in the `sources` array
-3. fill in tooth counts, `mainRatio`, and `tailRatio`
-4. use `notes` whenever there is any inference or special caution
+1. adicione um novo item em `assets/model_presets.json`
+2. inclua a fonte no array `sources`
+3. preencha contagens de dentes, `mainRatio` e `tailRatio`
+4. use `notes` sempre que houver inferência ou algum cuidado especial
 
-Suggested quality rules:
+Regras de qualidade sugeridas:
 
-- prioritize official manuals and manufacturer pages
-- use mirrors such as ManualsLib only as support when the official manual is not easily accessible
-- avoid filling models with guessed data
+- priorize manuais oficiais e páginas dos fabricantes
+- use fontes secundárias, como ManualsLib, apenas como apoio quando o manual oficial não estiver facilmente disponível
+- evite preencher modelos com dados chutados
 
-## Running The App
+## Como Rodar o App
 
-If the environment is not fully initialized yet, use:
+Se o ambiente ainda não estiver totalmente inicializado, use:
 
 ```bash
 flutter create --platforms=android,ios .
@@ -92,74 +100,74 @@ flutter pub get
 flutter run
 ```
 
-To validate the project:
+Para validar o projeto:
 
 ```bash
 flutter test
 dart analyze
 ```
 
-## APK Distribution For Testers
+## Distribuição de APK para Testes
 
-For the first test releases, the simplest flow is to publish an APK directly in a GitHub Release and share that release URL.
+Para as primeiras versões de teste, o fluxo mais simples é publicar o APK diretamente em uma GitHub Release e compartilhar o link dessa release.
 
-This repository now includes a workflow at [.github/workflows/android-apk-release.yml](C:\Users\vhuza\Documents\RC Heli Utils\.github\workflows\android-apk-release.yml) that:
+Este repositório inclui o workflow [.github/workflows/android-apk-release.yml](C:\Users\vhuza\Documents\RC Heli Utils\.github\workflows\android-apk-release.yml), que:
 
-- builds `flutter build apk --release`
-- uploads the APK as a workflow artifact
-- attaches the APK to a GitHub Release
+- executa `flutter build apk --release`
+- envia o APK como artifact do workflow
+- anexa o APK a uma GitHub Release
 
-You can trigger it in two ways:
+Você pode disparar esse processo de duas formas:
 
-- manually in `Actions > Android APK Release`
-- automatically when pushing a tag like `v0.1.0`
+- manualmente em `Actions > Android APK Release`
+- automaticamente ao enviar uma tag como `v0.1.0`
 
-### Recommended Signing Setup
+### Configuração Recomendada de Assinatura
 
-The Android project supports a local release keystore via [android/key.properties.example](C:\Users\vhuza\Documents\RC Heli Utils\android\key.properties.example).
+O projeto Android suporta uma keystore local de release usando [android/key.properties.example](C:\Users\vhuza\Documents\RC Heli Utils\android\key.properties.example).
 
-1. create your keystore
-2. copy `android/key.properties.example` to `android/key.properties`
-3. fill in `storePassword`, `keyPassword`, `keyAlias`, and `storeFile`
-4. keep both the keystore and `key.properties` out of git
+1. crie sua keystore
+2. copie `android/key.properties.example` para `android/key.properties`
+3. preencha `storePassword`, `keyPassword`, `keyAlias` e `storeFile`
+4. mantenha a keystore e o `key.properties` fora do git
 
-If no release keystore is configured, the app still builds using the debug signing config. That is acceptable for quick internal tests, but for wider distribution the recommended path is a real release keystore.
+Se nenhuma keystore de release estiver configurada, o app ainda pode ser gerado com a assinatura de debug. Isso serve para testes internos rápidos, mas para distribuição mais ampla o ideal é usar uma keystore de release real.
 
-### GitHub Secrets
+### Secrets do GitHub
 
-To generate signed APKs in GitHub Actions, add these repository secrets:
+Para gerar APKs assinados no GitHub Actions, adicione estes secrets no repositório:
 
 - `ANDROID_KEYSTORE_BASE64`
 - `ANDROID_KEYSTORE_PASSWORD`
 - `ANDROID_KEY_ALIAS`
 - `ANDROID_KEY_PASSWORD`
 
-The `ANDROID_KEYSTORE_BASE64` value should be the Base64 content of your `.jks` file.
+O valor de `ANDROID_KEYSTORE_BASE64` deve ser o conteúdo em Base64 do arquivo `.jks`.
 
-### Suggested Test Release Flow
+### Fluxo Sugerido de Release de Teste
 
-1. update `version:` in [pubspec.yaml](C:\Users\vhuza\Documents\RC Heli Utils\pubspec.yaml)
-2. commit the changes
-3. push to GitHub
-4. create and push a tag such as `v0.1.0`
-5. wait for the `Android APK Release` workflow to finish
-6. copy the GitHub Release link and share it with testers
+1. atualize a linha `version:` em [pubspec.yaml](C:\Users\vhuza\Documents\RC Heli Utils\pubspec.yaml)
+2. faça commit das mudanças
+3. envie para o GitHub
+4. crie e envie uma tag como `v0.1.0`
+5. aguarde a conclusão do workflow `Android APK Release`
+6. compartilhe o link da GitHub Release com os testers
 
-### Local APK Build
+### Build Local do APK
 
-To build the same package locally:
+Para gerar localmente o mesmo pacote:
 
 ```bash
 flutter pub get
 flutter build apk --release
 ```
 
-The generated APK will be available at:
+O APK gerado ficará em:
 
 ```text
-build/app/outputs/flutter-apk/app-release.apk
+build/app/outputs/flutter-apk/rc_heli_utils.apk
 ```
 
-## Note
+## Observação
 
-In this environment, commands such as `flutter test`, `dart analyze`, and `dart format` may take too long or hit timeout limits. If that happens, run validation directly on the host machine with the Flutter SDK configured.
+Neste ambiente, comandos como `flutter test`, `dart analyze` e `dart format` podem demorar demais ou atingir timeout. Se isso acontecer, rode a validação diretamente na máquina host com o Flutter SDK configurado.
