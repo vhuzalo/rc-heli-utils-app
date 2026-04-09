@@ -23,7 +23,7 @@ Na página da release, baixe o arquivo `rc_heli_utils.apk` na seção de assets.
 
 ## Presets de Mercado
 
-O projeto inclui uma base local de modelos pré-carregados em [assets/model_presets.json](C:\Users\vhuza\Documents\RC Heli Utils\assets\model_presets.json).
+O projeto inclui uma base local de modelos pré-carregados em [assets/model_presets.json](assets/model_presets.json).
 
 Para cada modelo, o arquivo armazena:
 
@@ -72,9 +72,9 @@ Observações:
 
 ## Arquivos Importantes
 
-- [lib/src/features/profiles/data/model_preset_repository.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\data\model_preset_repository.dart): carrega os presets a partir do asset local
-- [lib/src/features/profiles/domain/heli_model_preset.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\domain\heli_model_preset.dart): esquema dos presets de modelos pré-carregados
-- [lib/src/features/profiles/presentation/profiles_screen.dart](C:\Users\vhuza\Documents\RC Heli Utils\lib\src\features\profiles\presentation\profiles_screen.dart): editor de perfis com seleção de presets
+- [lib/src/features/profiles/data/model_preset_repository.dart](lib/src/features/profiles/data/model_preset_repository.dart): carrega os presets a partir do asset local
+- [lib/src/features/profiles/domain/heli_model_preset.dart](lib/src/features/profiles/domain/heli_model_preset.dart): esquema dos presets de modelos pré-carregados
+- [lib/src/features/profiles/presentation/profiles_screen.dart](lib/src/features/profiles/presentation/profiles_screen.dart): editor de perfis com seleção de presets
 
 ## Como Expandir a Base
 
@@ -93,12 +93,16 @@ Regras de qualidade sugeridas:
 
 ## Como Rodar o App
 
-Se o ambiente ainda não estiver totalmente inicializado, use:
-
 ```bash
-flutter create --platforms=android,ios .
 flutter pub get
 flutter run
+```
+
+Para rodar no iOS pela primeira vez, instale os pods:
+
+```bash
+cd ios && pod install && cd ..
+flutter run -d <device-id>
 ```
 
 Para validar o projeto:
@@ -108,11 +112,29 @@ flutter test
 dart analyze
 ```
 
+## Plataformas
+
+O app roda em **Android** e **iOS**.
+
+### iOS
+
+- Requer `NSMotionUsageDescription` em `ios/Runner/Info.plist` para acesso ao acelerômetro (já configurado)
+- Ícones gerados via `flutter_launcher_icons` a partir de `assets/app_icon.png`
+- Assinatura configurada com team pessoal via Xcode (automatic signing)
+- Após alterar dependências nativas: `cd ios && pod install`
+
+### Build iOS
+
+```bash
+flutter build ios --release --no-codesign   # sem assinatura (teste)
+flutter build ipa --release                  # IPA assinado (requer provisioning)
+```
+
 ## Distribuição de APK para Testes
 
 Para as primeiras versões de teste, o fluxo mais simples é publicar o APK diretamente em uma GitHub Release e compartilhar o link dessa release.
 
-Este repositório inclui o workflow [.github/workflows/android-apk-release.yml](C:\Users\vhuza\Documents\RC Heli Utils\.github\workflows\android-apk-release.yml), que:
+Este repositório inclui o workflow [.github/workflows/android-apk-release.yml](.github/workflows/android-apk-release.yml), que:
 
 - executa `flutter build apk --release`
 - envia o APK como artifact do workflow
@@ -125,7 +147,7 @@ Você pode disparar esse processo de duas formas:
 
 ### Configuração Recomendada de Assinatura
 
-O projeto Android suporta uma keystore local de release usando [android/key.properties.example](C:\Users\vhuza\Documents\RC Heli Utils\android\key.properties.example).
+O projeto Android suporta uma keystore local de release usando [android/key.properties.example](android/key.properties.example).
 
 1. crie sua keystore
 2. copie `android/key.properties.example` para `android/key.properties`
@@ -147,7 +169,7 @@ O valor de `ANDROID_KEYSTORE_BASE64` deve ser o conteúdo em Base64 do arquivo `
 
 ### Fluxo Sugerido de Release de Teste
 
-1. atualize a linha `version:` em [pubspec.yaml](C:\Users\vhuza\Documents\RC Heli Utils\pubspec.yaml)
+1. atualize a linha `version:` em [pubspec.yaml](pubspec.yaml)
 2. faça commit das mudanças
 3. envie para o GitHub
 4. crie e envie uma tag como `v0.1.0`
