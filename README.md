@@ -166,7 +166,13 @@ flutter build apk --release
 O APK gerado ficará em:
 
 ```text
-build/app/outputs/flutter-apk/rc_heli_utils.apk
+build/app/outputs/flutter-apk/app-release.apk
+```
+
+Se quiser usar o mesmo nome publicado na release, renomeie o arquivo depois do build:
+
+```bash
+mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/rc_heli_utils.apk
 ```
 
 ## Observação
